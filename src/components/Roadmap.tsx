@@ -39,13 +39,13 @@ export default function Roadmap() {
         },
         {
           title: 'Fase 2: Desenvolvimento Core',
-          duration: '6 semanas',
+          duration: '5 semanas',
           status: 'in_progress',
           deliverables: ['API funcional', 'Dashboard operacional', 'Integração ServiceNow/Teams'],
         },
         {
           title: 'Fase 3: Integração e Testes',
-          duration: '4 semanas',
+          duration: '2 semanas',
           status: 'pending',
           deliverables: ['Sistema integrado', 'Relatórios de testes', 'Documentação técnica'],
         },
@@ -57,7 +57,7 @@ export default function Roadmap() {
         },
         {
           title: 'Fase 5: Deploy e Go-Live',
-          duration: '2 semanas',
+          duration: '1 semana',
           status: 'pending',
           deliverables: ['Sistema em produção', 'Documentação completa', 'Plano de suporte'],
         },

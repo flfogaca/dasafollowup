@@ -41,7 +41,7 @@ export default function NextSteps() {
         owner: 'Gestão',
         deadline: 'Até Quarta (19/02)',
         priority: 'ALTA',
-        description: 'Definir recursos para desenvolvimento - 3 desenvolvedores',
+        description: 'Definir recursos para desenvolvimento - 2 desenvolvedores',
         icon: Users,
       },
     ],
@@ -238,7 +238,7 @@ export default function NextSteps() {
               </li>
               <li className="flex items-center gap-2">
                 <span className="text-blue-400">!</span>
-                Alocar recursos (3 desenvolvedores)
+                Alocar recursos (2 desenvolvedores)
               </li>
               <li className="flex items-center gap-2">
                 <span className="text-blue-400">!</span>
