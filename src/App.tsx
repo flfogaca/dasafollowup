@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import { useState, useEffect } from 'react';
 import Header from './components/Header';
 import Hero from './components/Hero';
 import ExecutiveSummary from './components/ExecutiveSummary';
@@ -15,12 +15,25 @@ import Footer from './components/Footer';
 import Documentation from './components/Documentation';
 import SolutionExplorer from './components/SolutionExplorer';
 import Roadmap from './components/Roadmap';
+import PropostaPDF from './pages/PropostaPDF';
 
 function App() {
   const [activeSection, setActiveSection] = useState('hero');
   const [scrollProgress, setScrollProgress] = useState(0);
+  const [showProposal, setShowProposal] = useState(
+    window.location.hash === '#proposta'
+  );
 
   useEffect(() => {
+    const handleHash = () => {
+      setShowProposal(window.location.hash === '#proposta');
+    };
+    window.addEventListener('hashchange', handleHash);
+    return () => window.removeEventListener('hashchange', handleHash);
+  }, []);
+
+  useEffect(() => {
+    if (showProposal) return;
     const handleScroll = () => {
       const scrollHeight = document.documentElement.scrollHeight - window.innerHeight;
       const scrolled = (window.scrollY / scrollHeight) * 100;
@@ -29,7 +42,11 @@ function App() {
 
     window.addEventListener('scroll', handleScroll);
     return () => window.removeEventListener('scroll', handleScroll);
-  }, []);
+  }, [showProposal]);
+
+  if (showProposal) {
+    return <PropostaPDF />;
+  }
 
   return (
     <div className="min-h-screen bg-gradient-to-b from-slate-950 via-slate-900 to-slate-950">

@@ -1,5 +1,5 @@
-import React, { useEffect, useState } from 'react';
-import { ArrowRight, Zap, TrendingUp, Clock } from 'lucide-react';
+import { useEffect, useState } from 'react';
+import { ArrowRight, Zap, TrendingUp, Clock, FileText } from 'lucide-react';
 
 export default function Hero() {
   const [ticketCount, setTicketCount] = useState(0);
@@ -76,6 +76,13 @@ export default function Hero() {
           >
             Explorar Solução
             <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
+          </button>
+          <button
+            onClick={() => { window.location.hash = '#proposta'; }}
+            className="group px-8 py-4 bg-gradient-to-r from-green-600 to-emerald-500 text-white font-semibold rounded-xl hover:shadow-lg hover:shadow-green-500/25 transition-all flex items-center gap-2 justify-center"
+          >
+            <FileText className="w-5 h-5" />
+            Proposta Comercial (PDF)
           </button>
           <button
             onClick={() => document.getElementById('documentation')?.scrollIntoView({ behavior: 'smooth' })}
