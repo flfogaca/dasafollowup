@@ -3,9 +3,8 @@ import { Users, Calendar, Clock, DollarSign, Target, TrendingUp, Layers, Zap, Sh
 
 export default function EffortEstimate() {
   const teamMembers = [
-    { name: 'Flamarion Fogaça', role: 'Desenvolvedor Full-Stack', hours: 640 },
-    { name: 'Renan Jordão', role: 'Desenvolvedor Full-Stack', hours: 640 },
-    { name: 'Jhonathan Ducatti', role: 'Desenvolvedor Full-Stack', hours: 640 },
+    { name: 'Flamarion Fogaça', role: 'Desenvolvedor Full-Stack Senior', hours: 403 },
+    { name: 'Renan Jordão', role: 'Desenvolvedor Full-Stack Senior', hours: 403 },
   ];
 
   const principles = [
@@ -45,60 +44,61 @@ export default function EffortEstimate() {
     {
       name: 'Fase 1: Descoberta e Design',
       duration: '2 semanas',
-      weeks: 2,
+      hours: 104,
       tasks: [
-        'Análise detalhada dos requisitos',
+        'Levantamento e análise de requisitos',
         'Definição da arquitetura técnica',
-        'Prototipação de interfaces',
-        'Planejamento de sprints',
+        'Prototipação de interfaces (UI/UX)',
+        'Planejamento de sprints e backlog',
+        'Reuniões e alinhamentos',
       ],
       deliverables: 'Documento de arquitetura, Protótipos UI/UX, Backlog priorizado',
     },
     {
       name: 'Fase 2: Desenvolvimento Core',
-      duration: '6 semanas',
-      weeks: 6,
+      duration: '5 semanas',
+      hours: 416,
       tasks: [
-        'Setup da infraestrutura',
-        'Desenvolvimento da API e integrações',
-        'Implementação do dashboard',
-        'Sistema de categorização IA',
+        'Edge Functions e integrações (ServiceNow, Teams, AD, OpenAI)',
+        'Dashboard operacional e telas de gestão',
+        'Autenticação OAuth2 e RBAC',
+        'Testes unitários (cobertura >80%)',
       ],
       deliverables: 'API funcional, Dashboard operacional, Integração ServiceNow/Teams',
     },
     {
       name: 'Fase 3: Integração e Testes',
-      duration: '4 semanas',
-      weeks: 4,
+      duration: '2 semanas',
+      hours: 156,
       tasks: [
-        'Testes de integração',
-        'Testes de performance',
-        'Testes de segurança',
-        'Ajustes e refinamentos',
+        'Testes de integração E2E',
+        'Testes de carga e segurança (LGPD)',
+        'Bug fixes e otimizações',
+        'Documentação técnica',
       ],
       deliverables: 'Sistema integrado, Relatórios de testes, Documentação técnica',
     },
     {
       name: 'Fase 4: Piloto e Validação',
       duration: '2 semanas',
-      weeks: 2,
+      hours: 78,
       tasks: [
-        'Deploy em ambiente de homologação',
-        'Testes com usuários reais',
-        'Coleta de feedback',
-        'Ajustes finais',
+        'Deploy em homologação',
+        'Treinamento do grupo piloto',
+        'Monitoramento e coleta de feedback',
+        'Ajustes baseados em feedback',
       ],
       deliverables: 'Sistema validado, Relatório de piloto, Plano de rollout',
     },
     {
       name: 'Fase 5: Deploy e Go-Live',
-      duration: '2 semanas',
-      weeks: 2,
+      duration: '1 semana',
+      hours: 52,
       tasks: [
         'Deploy em produção',
         'Monitoramento intensivo',
-        'Suporte ao usuário',
-        'Otimizações pós-lançamento',
+        'Ajustes em tempo real',
+        'Documentação final e handover',
       ],
       deliverables: 'Sistema em produção, Documentação completa, Plano de suporte',
     },
@@ -130,8 +130,8 @@ export default function EffortEstimate() {
               </div>
               <h3 className="font-semibold text-white">Duração Total</h3>
             </div>
-            <p className="text-3xl font-bold text-blue-400 mb-1">16 semanas</p>
-            <p className="text-sm text-slate-400">~4 meses de desenvolvimento</p>
+            <p className="text-3xl font-bold text-blue-400 mb-1">12 semanas</p>
+            <p className="text-sm text-slate-400">~3 meses de desenvolvimento</p>
           </div>
 
           <div className="bg-gradient-to-br from-cyan-900/40 to-slate-900/40 border border-cyan-500/30 rounded-xl p-6">
@@ -141,7 +141,7 @@ export default function EffortEstimate() {
               </div>
               <h3 className="font-semibold text-white">Equipe</h3>
             </div>
-            <p className="text-3xl font-bold text-cyan-400 mb-1">3 devs</p>
+            <p className="text-3xl font-bold text-cyan-400 mb-1">2 devs</p>
             <p className="text-sm text-slate-400">{totalHours.toLocaleString()}h totais</p>
           </div>
 
@@ -233,9 +233,14 @@ export default function EffortEstimate() {
               >
                 <div className="mb-3">
                   <h4 className="font-semibold text-white mb-2">{phase.name}</h4>
-                  <span className="text-sm font-medium text-cyan-400">
-                    {phase.duration}
-                  </span>
+                  <div className="flex gap-3">
+                    <span className="text-sm font-medium text-cyan-400">
+                      {phase.duration}
+                    </span>
+                    <span className="text-sm font-medium text-blue-400">
+                      {phase.hours}h
+                    </span>
+                  </div>
                 </div>
                 <ul className="space-y-1 mb-3">
                   {phase.tasks.map((task, taskIndex) => (
