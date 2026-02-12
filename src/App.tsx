@@ -15,6 +15,7 @@ import Footer from './components/Footer';
 import Documentation from './components/Documentation';
 import SolutionExplorer from './components/SolutionExplorer';
 import Roadmap from './components/Roadmap';
+import PowerAutomateFlows from './components/PowerAutomateFlows';
 import PropostaPDF from './pages/PropostaPDF';
 
 function App() {
@@ -77,6 +78,10 @@ function App() {
 
         <section id="architecture" className="snap-start bg-slate-900/50">
           <Architecture />
+        </section>
+
+        <section id="power-automate" className="snap-start">
+          <PowerAutomateFlows />
         </section>
 
         <section id="kpis" className="snap-start">
