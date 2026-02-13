@@ -83,7 +83,7 @@ export default function NextSteps() {
       {
         id: 9,
         title: 'Comitê de Aprovação',
-        owner: 'Ana Terra',
+        owner: 'Gestão',
         deadline: 'Semanal',
         priority: 'CRÍTICA',
         description: 'Reunião de gestão de incidentes com exposição de backlog',
