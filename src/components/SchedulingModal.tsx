@@ -18,7 +18,7 @@ export default function SchedulingModal({ isOpen, onClose }: SchedulingModalProp
   const [submitStatus, setSubmitStatus] = useState<'idle' | 'success' | 'error'>('idle');
 
   const dasaTeam = [
-    { name: 'Flamarion Fogaça', email: 'flamarion.fogaca@leega.com.br' },
+    { name: 'Jhonatta Ducatti', email: 'jhonatta.ducatti@leega.com.br' },
     { name: 'Renan Jordão', email: 'renan.jordao@leega.com.br' },
     { name: 'Jhonattan Reis', email: 'jhonatta.reis@leega.com.br' },
   ];

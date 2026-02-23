@@ -3,7 +3,7 @@ import { Users, Calendar, Clock, DollarSign, Target, TrendingUp, Layers, Zap, Sh
 
 export default function EffortEstimate() {
   const teamMembers = [
-    { name: 'Flamarion Fogaça', role: 'Desenvolvedor Full-Stack Senior', hours: 403 },
+    { name: 'Jhonatta Ducatti', role: 'Desenvolvedor Full-Stack Senior', hours: 403 },
     { name: 'Renan Jordão', role: 'Desenvolvedor Full-Stack Senior', hours: 403 },
   ];
 
