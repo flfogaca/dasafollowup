@@ -33,16 +33,7 @@ export default function ProposalTech() {
       <h3 className="proposal-h3">3.1. Stack Tecnologica</h3>
       <div className="grid grid-cols-2 gap-4 mb-6">
         <div className="border border-[#e2e8f0] rounded-lg p-4">
-          <h4 className="text-sm font-bold text-[#0055a4] mb-2">Frontend</h4>
-          <ul className="text-sm text-[#334155] space-y-1">
-            <li>React 18.3 com TypeScript</li>
-            <li>Vite 5 (Build Tool)</li>
-            <li>Tailwind CSS 3.4</li>
-            <li>Lucide React (Icons)</li>
-          </ul>
-        </div>
-        <div className="border border-[#e2e8f0] rounded-lg p-4">
-          <h4 className="text-sm font-bold text-[#0055a4] mb-2">Backend</h4>
+          <h4 className="text-sm font-bold text-[#0055a4] mb-2">Backend & APIs</h4>
           <ul className="text-sm text-[#334155] space-y-1">
             <li>Supabase (PostgreSQL + Edge Functions)</li>
             <li>Deno Runtime</li>
@@ -67,20 +58,29 @@ export default function ProposalTech() {
             <li>Power BI (opcional)</li>
           </ul>
         </div>
+        <div className="border border-[#e2e8f0] rounded-lg p-4">
+          <h4 className="text-sm font-bold text-[#0055a4] mb-2">Automacao</h4>
+          <ul className="text-sm text-[#334155] space-y-1">
+            <li>Jobs agendados (Cron)</li>
+            <li>Triggers automaticos</li>
+            <li>Webhooks bidirecionais</li>
+            <li>Event-driven architecture</li>
+          </ul>
+        </div>
       </div>
 
       <h3 className="proposal-h3">3.2. Arquitetura da Solucao</h3>
       <div className="border border-[#e2e8f0] rounded-lg p-4 mb-6 text-sm font-mono text-[#334155] space-y-2">
         <div className="border border-[#bfdbfe] bg-[#eff6ff] rounded p-2 text-center">
-          <span className="font-semibold text-[#0055a4]">FRONTEND LAYER</span>
+          <span className="font-semibold text-[#0055a4]">AUTOMATION LAYER</span>
           <br />
-          React Dashboard | Interactive PoC | Real-time Metrics
+          Scheduled Jobs | Event Triggers | Business Rules Engine
         </div>
         <div className="text-center text-[#94a3b8]">&#8597;</div>
         <div className="border border-[#bfdbfe] bg-[#eff6ff] rounded p-2 text-center">
           <span className="font-semibold text-[#0055a4]">EDGE FUNCTIONS LAYER</span>
           <br />
-          Teams Integration | Categorization Engine | Escalation Logic
+          Teams Integration | AI Categorization | Escalation Logic
         </div>
         <div className="text-center text-[#94a3b8]">&#8597;</div>
         <div className="border border-[#bfdbfe] bg-[#eff6ff] rounded p-2 text-center">
@@ -92,7 +92,7 @@ export default function ProposalTech() {
         <div className="border border-[#bfdbfe] bg-[#eff6ff] rounded p-2 text-center">
           <span className="font-semibold text-[#0055a4]">EXTERNAL APIs LAYER</span>
           <br />
-          ServiceNow TSM | Microsoft Teams | Active Directory
+          ServiceNow TSM | Microsoft Teams | Active Directory | OpenAI
         </div>
       </div>
 
