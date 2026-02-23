@@ -37,13 +37,15 @@ export default function Timeline() {
       color: 'from-cyan-600 to-cyan-400',
       activities: [
         'Edge Functions e integrações (ServiceNow, Teams, AD, OpenAI)',
-        'Dashboard operacional e telas de gestão',
+        'Engine de categorização inteligente com IA',
+        'Sistema de monitoramento e escalação automática',
         'Autenticação OAuth2 e RBAC',
         'Testes unitários (cobertura >80%)',
       ],
       deliverables: [
         'API totalmente funcional',
-        'Dashboard operacional',
+        'Motor de IA operacional',
+        'Sistema de escalação',
         'Integração ServiceNow/Teams',
         'Testes unitários',
       ],

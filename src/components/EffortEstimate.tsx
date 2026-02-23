@@ -60,11 +60,12 @@ export default function EffortEstimate() {
       hours: 416,
       tasks: [
         'Edge Functions e integrações (ServiceNow, Teams, AD, OpenAI)',
-        'Dashboard operacional e telas de gestão',
+        'Engine de categorização inteligente com IA',
+        'Sistema de monitoramento e escalação automática',
         'Autenticação OAuth2 e RBAC',
         'Testes unitários (cobertura >80%)',
       ],
-      deliverables: 'API funcional, Dashboard operacional, Integração ServiceNow/Teams',
+      deliverables: 'API funcional, Motor de IA, Sistema de escalação, Integração ServiceNow/Teams',
     },
     {
       name: 'Fase 3: Integração e Testes',

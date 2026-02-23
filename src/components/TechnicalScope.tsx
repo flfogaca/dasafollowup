@@ -13,7 +13,6 @@ export default function TechnicalScope() {
         'Identificação de tickets com 7+ dias sem atualização',
         'Análise de usuários inativos na rede',
         'Trigger de escalação baseado em regras de negócio',
-        'Dashboard em tempo real com visibilidade de backlog',
         'Integração com ServiceNow TSM',
       ],
     },

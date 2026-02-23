@@ -4,7 +4,6 @@ import Hero from './components/Hero';
 import ExecutiveSummary from './components/ExecutiveSummary';
 import TechnicalScope from './components/TechnicalScope';
 import Architecture from './components/Architecture';
-import KPIsDashboard from './components/KPIsDashboard';
 import ROICalculator from './components/ROICalculator';
 import InteractiveDemo from './components/InteractiveDemo';
 import EffortEstimate from './components/EffortEstimate';
@@ -82,10 +81,6 @@ function App() {
 
         <section id="power-automate" className="snap-start">
           <PowerAutomateFlows />
-        </section>
-
-        <section id="kpis" className="snap-start">
-          <KPIsDashboard />
         </section>
 
         <section id="roi" className="snap-start bg-slate-900/50">
