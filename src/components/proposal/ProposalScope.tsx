@@ -8,13 +8,12 @@ const modules = [
       'Identificacao automatica de tickets com 7+ dias sem atualizacao',
       'Analise de usuarios inativos na rede (integracao com Active Directory)',
       'Trigger de escalacao baseado em regras de negocio configuraveis',
-      'Dashboard em tempo real com visibilidade completa do backlog',
       'Integracao nativa com ServiceNow TSM para leitura e atualizacao de tickets',
       'Alertas proativos para gestores de filas responsaveis',
     ],
     deliverables: [
       'Engine de monitoramento com jobs agendados',
-      'Dashboard de backlog em tempo real',
+      'Sistema de alertas proativos',
       'Regras de negocio configuraveis via interface',
     ],
   },
@@ -34,7 +33,7 @@ const modules = [
     deliverables: [
       'API de categorizacao com IA',
       'Interface de revisao humana para tickets incertos',
-      'Dashboard de acuracia e metricas de categorizacao',
+      'Sistema de metricas de acuracia',
     ],
   },
   {
@@ -53,7 +52,7 @@ const modules = [
     deliverables: [
       'Integracao completa com Microsoft Teams via Graph API',
       'Sistema de templates de mensagens',
-      'Dashboard de metricas de resposta via Teams',
+      'Sistema de metricas de resposta via Teams',
     ],
   },
   {
@@ -72,7 +71,7 @@ const modules = [
     deliverables: [
       'Engine de roteamento inteligente',
       'Sistema de escalacao automatica',
-      'Dashboard de SLA e metricas por grupo',
+      'Sistema de metricas de SLA por grupo',
     ],
   },
   {
@@ -91,7 +90,7 @@ const modules = [
     deliverables: [
       'Sistema de agendamento de tentativas',
       'Integracao com telefonia (opcional)',
-      'Dashboard de metricas de contato',
+      'Sistema de metricas de contato',
     ],
   },
   {
@@ -109,7 +108,7 @@ const modules = [
     ],
     deliverables: [
       'Jobs de limpeza e validacao de dados',
-      'Dashboard de qualidade de dados',
+      'Sistema de metricas de qualidade',
       'Relatorios de auditoria',
     ],
   },
